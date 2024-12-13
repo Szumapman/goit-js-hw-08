@@ -89,7 +89,7 @@ gallery.addEventListener("click", (event) => {
     const { target } = event;
     if (target.classList.contains("gallery-image")) {
         const imgLargeUrl = target.dataset.source;
-        const imgLargeAlt = target.alt
+        const imgLargeAlt = target.alt;
         
         const modal = basicLightbox.create(`
                 <img src="${imgLargeUrl}" alt="${imgLargeAlt}" />
